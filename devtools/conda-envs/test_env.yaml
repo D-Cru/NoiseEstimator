@@ -1,0 +1,34 @@
+name: test
+channels:
+
+  - conda-forge
+
+  - defaults
+dependencies:
+    # Base depends
+  - python
+  - pip
+
+  # Package dependencies
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - seaborn
+  - tqdm
+  - openpyxl
+  # - jupyter
+
+    # Testing
+  - pytest
+  - pytest-cov
+  - codecov
+
+    # Web application
+  - streamlit
+
+    # Pip-only installs
+  #- pip:
+  #  - codecov
+
