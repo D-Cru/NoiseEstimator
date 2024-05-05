@@ -42,7 +42,7 @@ dependencies = [
 ]
 
 # Update the urls once the hosting is set up.
-#[project.urls]
+[project.urls]
 "Source" = "https://github.com/d-cru/noiseestimator/"
 #"Documentation" = "https://noiseestimator.readthedocs.io/"
 
