@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple noiseestimator==0.0.5
+RUN pip install noiseestimator
 
 # Install the Streamlit library
 RUN pip install streamlit
