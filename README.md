@@ -55,17 +55,17 @@ The subfolder `reports/leaderboards` contains a printout of the relevant leaderb
 
 The experimental error estimates were derived as follows:
 
-* BACE and CASF 2016: The error estimates are based on a systematic study of duplicate values in the ChEMBL database (Ref. 23) This analysis is based on 2,540 systems with 7,667 measurements.
+* BACE and CASF 2016: The error estimates are based on a systematic study of duplicate values in the ChEMBL database. [1] This analysis is based on 2,540 systems with 7,667 measurements.
 
-* Lipophilicity: The error estimate is based on the experimental standard deviation for the specific assay (ref 27). The standard deviation is based on a set of 22 compounds with literature reference values, to which the assay was compared to. The data for this is in `data/external/lipophilicity` and the standard deviation is computed in the `d_lipophilicity.ipynb` notebook.
+* Lipophilicity: The error estimate is based on the experimental standard deviation for the specific assay [2]. The standard deviation is based on a set of 22 compounds with literature reference values, to which the assay was compared to. The data for this is in `data/external/lipophilicity` and the standard deviation is computed in the `d_lipophilicity.ipynb` notebook.
 
-* Caco-2: The error estimate is based on an inter-lab comparison study (ref. 29) of 10 compounds, measured in a total of 7 different laboratories. The error estimation includes all possible 169 pairwise values, which yields an experimental standard deviation of 0.41 log units.  Computation is in the `d_caco2_wang.ipynb` notebook.
+* Caco-2: The error estimate is based on an inter-lab comparison study [3] of 10 compounds, measured in a total of 7 different laboratories. The error estimation includes all possible 169 pairwise values, which yields an experimental standard deviation of 0.41 log units.  Computation is in the `d_caco2_wang.ipynb` notebook.
 
 * Rzepiela: The error estimate of the Pampa permeability dataset was reported by the authors for high and low permeability data points separately. 
 
 * Solubility (AqSolDB): The AqSolDB dataset is a carefully curated dataset based on multiple previous datasets. We went back to the raw data and the error estimate is based on 9813 compounds with duplicate values. The code for this is in `scripts/aqsoldb-error-estimation.py` and requires raw data from https://doi.org/10.24433/CO.1992938.v1. 
 
-* Buchwald-Hartwig HTE: The standard deviation is based on 64 duplicate value pairs from the original assay publication: (see SI, Data S5, Experiment 9). For details, see `data/external/rxn_Buchwald-Hartwig/Buchwald-Hartwig HTE.xlsx`
+* Buchwald-Hartwig HTE: The standard deviation is based on 64 duplicate value pairs from the original assay publication [4]: (see SI, Data S5, Experiment 9). For details, see `data/external/rxn_Buchwald-Hartwig/Buchwald-Hartwig HTE.xlsx`
 
 * Matbench expt_gap: The curated matbench experimental band gap dataset is based on a matminer dataset, which contains duplicate values. A total of 462 compounds have duplicate values, which we used to estimate the experimental standard deviation in the notebook `d_matbench_expt_gap.ipynb`. 
 
@@ -105,6 +105,12 @@ Copyright (c) 2024, Daniel Crusius
 
 
 ### Acknowledgements
+
+References: \
+[1] C. Kramer, T. Kalliokoski, P. Gedeck and A. Vulpetti, J Med Chem, 2012, 55, 5165-5173 \
+[2] M. C. Wenlock, T. Potter, P. Barton and R. P. Austin, J Biomol Screen, 2011, 16, 348-355 \
+[3] J. B. Lee, A. Zgair, D. A. Taha, X. Zang, L. Kagan, T. H. Kim, M. G. Kim, H. Y. Yun, P. M. Fischer and P. Gershkovich, Eur J Pharm Biopharm, 2017, 114, 38-42 \
+[4] J. B. Lee, A. Zgair, D. A. Taha, X. Zang, L. Kagan, T. H. Kim, M. G. Kim, H. Y. Yun, P. M. Fischer and P. Gershkovich, Eur J Pharm Biopharm, 2017, 114, 38-42
  
 Project based on the 
 [Computational Molecular Science Python Cookiecutter](https://github.com/molssi/cookiecutter-cms) version 1.1.
