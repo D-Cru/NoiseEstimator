@@ -4,7 +4,7 @@ BACE regression,bace_r.csv,pIC50,0.69,,,,,
 BACE classification,bace_r.csv,pIC50,0.69,,,,1,7
 Lipophilicity,lipo.csv,Y,0.34,,,,,
 AqSolDB,aqsoldb.csv,Y,0.56,,,,,
-Caco-2 permeability,caco2.csv,Y,0.35,,,,,
+Caco-2 permeability,caco2.csv,Y,0.42,,,,,
 Rzepiela,rzepiela.csv,logPeff,0.0,0.6,0.2,6.7,,
 Buchwald-Hartwig HTE,buchwald.csv,Output,5.3,,,,,
 Matbench expt gap,matbench_gap.csv,gap expt,0.14,,,,,
