@@ -99,12 +99,12 @@ TODO: add a method to better specify the types of metrics to use \(i.e. allow cu
 TODO: datasets: write json files instead of having a big csv file... \
 TODO: add tests for web application
 
-### Copyright
+## Copyright
 
 Copyright (c) 2024, Daniel Crusius
 
 
-### Acknowledgements
+## Acknowledgements
 
 References: \
 [1] C. Kramer, T. Kalliokoski, P. Gedeck and A. Vulpetti, J Med Chem, 2012, 55, 5165-5173 \
